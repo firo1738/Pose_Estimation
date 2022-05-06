@@ -1,0 +1,2 @@
+model_checkpoint_path: "E:\\CodeProjects\\deeplabcut\\Pose_Estimation-Rohit-2022-05-06\\dlc-models\\iteration-0\\Pose_EstimationMay6-trainset95shuffle1\\train\\snapshot-5000"
+all_model_checkpoint_paths: "E:\\CodeProjects\\deeplabcut\\Pose_Estimation-Rohit-2022-05-06\\dlc-models\\iteration-0\\Pose_EstimationMay6-trainset95shuffle1\\train\\snapshot-5000"

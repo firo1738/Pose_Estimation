@@ -1,0 +1,79 @@
+    # Project definitions (do not edit)
+Task: Pose_Estimation
+scorer: Rohit
+date: May6
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: E:\CodeProjects\deeplabcut\Pose_Estimation-Rohit-2022-05-06
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  E:\CodeProjects\deeplabcut\Pose_Estimation-Rohit-2022-05-06\videos\Horse Walk.mp4:
+    crop: 0, 640, 0, 480
+bodyparts:
+- mouth
+- head
+- neck
+- torso
+- leg1
+- foot1
+- leg2
+- foot2
+- leg3
+- foot3
+- leg4
+- foot4
+- tail
+- end
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - mouth
+  - head
+- - neck
+  - torso
+- - leg1
+  - foot1
+- - leg2
+  - foot2
+- - leg3
+  - foot3
+- - leg4
+  - foot4
+- - tail
+  - end
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
